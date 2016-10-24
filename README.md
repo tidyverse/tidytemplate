@@ -10,5 +10,5 @@ To regenerate `tidyverse.css`, first install [sass](http://sass-lang.com/install
 
 ```bash
 # gem install sass
-sass scss/tidyverse.scss inst/assets/tidyverse.css
+sass scss/tidyverse.scss inst/pkgdown/assets/tidyverse.css
 ```
