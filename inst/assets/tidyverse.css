@@ -6485,4 +6485,48 @@ input[type="checkbox"],
 .carousel-caption h1, .carousel-caption h2, .carousel-caption h3, .carousel-caption h4, .carousel-caption h5, .carousel-caption h6 {
   color: inherit; }
 
+/* Fixes for fixed navbar --------------------------*/
+body {
+  position: relative;
+  padding-top: 110px; }
+
+.section h1, .section h2, .section h3, .section h4 {
+  padding-top: 80px;
+  margin-top: -60px; }
+
+/* Table of contents --------------------------*/
+#tocnav {
+  position: fixed;
+  top: 120px;
+  padding: 40px;
+  -webkit-transition: top, .33s;
+  -o-transition: top, .33s;
+  transition: top, .33s; }
+  #tocnav h2 {
+    font-size: 1.5em; }
+  @media screen and (max-width: 991px) {
+    #tocnav {
+      display: none; } }
+
+.shrink-header #tocnav {
+  top: 30px; }
+
+/* tidyverse link ------------------- */
+.navbar-brand-container {
+  position: relative;
+  min-width: 200px; }
+
+.tidylink {
+  position: absolute;
+  top: 70px;
+  left: 74px;
+  font-size: 12px;
+  color: #555;
+  -webkit-transition: all, .25s;
+  -o-transition: all, .25s;
+  transition: all, .25s; }
+  @media screen and (max-width: 768px) {
+    .tidylink {
+      left: 89px; } }
+
 /*# sourceMappingURL=tidyverse.css.map */
