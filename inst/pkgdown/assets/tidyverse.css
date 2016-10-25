@@ -5819,6 +5819,7 @@ button.close {
     font-family: "Source Code Pro", Menlo, Monaco, Consolas, "Courier New", monospace;
     font-weight: normal;
     font-size: 48px;
+    padding: 35px 15px;
     padding-left: 84px;
     background-image: url(../logo.png);
     background-size: 60px auto;
