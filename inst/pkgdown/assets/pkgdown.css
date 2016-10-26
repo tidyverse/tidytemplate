@@ -13,9 +13,6 @@ body {
 /* Table of contents --------------------------*/
 
 #sidebar {
-  position: fixed;
-
-  top: 80px;
   padding-top: 40px;
 
   word-wrap: break-word;
@@ -43,8 +40,20 @@ body {
   color: #777;
 }
 
-@media screen and (min-width: 970px) {
+/* 992 is the threshold at which md columns wrap, which
+   should place the sidebar at the bottom of the page */
+@media screen and (max-width: 992px) {
+  #sidebar.affix {
+    position: static;
+  }
+}
+/* .affix adds position:fixed, and fixed elements must
+   have their position and width specified explicitly.
+   This appears to trigger a bug if you scroll past the
+   footer */
+@media screen and (min-width: 992px) {
   #sidebar {
+    top: 80px;
     width: 243px;
   }
 }
