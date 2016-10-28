@@ -21,6 +21,13 @@ body {
   hyphens: auto;
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
+
+  /*
+    Needed to avoid bug in sticky-kit:
+    https://github.com/leafo/sticky-kit/issues/169
+  */
+  position:static;
+
 }
 
 #sidebar h2 {
