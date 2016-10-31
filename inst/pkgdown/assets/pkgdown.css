@@ -54,6 +54,12 @@ body {
 .symbol {color:black ;}
 .prompt {color:black ;}
 
+pre.examples {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
 pre img {
   background-color: #fff;
   display: block;
