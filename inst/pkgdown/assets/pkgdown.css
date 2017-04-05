@@ -61,6 +61,10 @@ body {
 .symbol {color:black ;}
 .prompt {color:black ;}
 
+pre {
+  word-wrap: normal;
+}
+
 pre a {
   font-weight: bolder;
 }
