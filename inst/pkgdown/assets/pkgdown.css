@@ -21,6 +21,28 @@ body {
   margin-top: 0;
 }
 
+/* Static header placement on mobile devices */
+@media (max-width: 767px) {
+  .navbar-fixed-top {
+    position: static;
+  }
+  .navbar {
+    padding: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0px;
+  }
+  .navbar-toggle {
+    margin-top: 8px;
+    margin-bottom: 5px;
+  }
+
+  body {
+    padding-top: 0px;
+  }
+}
+
 /* Table of contents --------------------------*/
 
 #sidebar {
