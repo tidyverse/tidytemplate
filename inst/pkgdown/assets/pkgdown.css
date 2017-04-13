@@ -24,9 +24,10 @@ body {
 /* Static header placement on mobile devices */
 @media (max-width: 767px) {
   .navbar-fixed-top {
-    position: fixed;
+    position: absolute;
   }
 }
+
 .navbar-toggle {
   margin-top: 8px;
   margin-bottom: 5px;
@@ -57,33 +58,43 @@ body {
   color: #777;
 }
 
-
 /* Syntax highlighting ---------------------------------------------------- */
-
-.fl,.number {color:rgb(21,20,181);}
-.fu,.functioncall {color:#264D66 ;}
-.ch,.st,.string {color:#375D81 ;}
-.kw,.keyword {font-weight:600;}
-.argument {color:#264D66 ;}
-.co,.comment {color: #333;}
-.formalargs {color: #264D66;}
-.eqformalargs {color:#264D66;}
-.slot {font-style:italic;}
-.symbol {color:black ;}
-.prompt {color:black ;}
 
 pre {
   word-wrap: normal;
+  word-break: normal;
 }
 
-pre a {
-  font-weight: bolder;
+pre, code {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+pre.examples {
+  border: none;
+  background: none;
+  padding: 0;
 }
 
 pre img {
   background-color: #fff;
   display: block;
 }
+
+code a, pre a {
+  color: #375f84;
+}
+
+.fl      {color: #1514b5;}
+.fu      {color: #000000;} /* function */
+.ch,.st  {color: #036a07;} /* string */
+.kw      {color: #264D66;} /* keyword */
+.co      {color: #666666;} /* comment */
+
+.message { color: black;   font-weight: bolder;}
+.error   { color: orange;  font-weight: bolder;}
+.warning { color: #6A0366; font-weight: bolder;}
+
 
 /* Status --------------------------- */
 
@@ -114,7 +125,6 @@ pre img {
 
   }
 */
-
 
 /* Reference index & topics ----------------------------------------------- */
 
@@ -152,13 +162,6 @@ footer .tidyverse {
 footer .author {
   flex: 1;
   text-align: right;
-}
-
-/* --------------------- darken code link color */
-
-code a {
-  color: #375f84;
-  font-weight: 600;
 }
 
 /* ---------------------- hover anchor tags */
