@@ -1,6 +1,6 @@
 # tidytemplate
 
-tidytemplate provides a custom [pkgdown](http://hadley.github.io/pkgdown/) template for core tidyverse packages (i.e. packages hosted by the [tidyverse organisation](http://github.com/tidyverse)). Please don't use it for you own package.
+tidytemplate provides a custom [pkgdown](http://hadley.github.io/pkgdown/) template for core tidyverse packages (i.e. packages hosted by the [tidyverse organisation](http://github.com/tidyverse)). Please don't use it for your own package.
 
 The theme is built on top of the [paper bootswatch theme](https://bootswatch.com/paper/).
 
