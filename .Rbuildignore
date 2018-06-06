@@ -2,3 +2,4 @@
 ^\.Rproj\.user$
 ^scss$
 ^\.sass-cache$
+^\.github$
