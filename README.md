@@ -2,7 +2,7 @@
 
 tidytemplate provides a custom [pkgdown](https://pkgdown.r-lib.org) template for core tidyverse packages (i.e. packages hosted by the [tidyverse organisation](https://github.com/tidyverse)). Please don't use it for your own package.
 
-The theme is built on top of the [paper bootswatch theme](https://bootswatch.com/paper/).
+The theme is built on top of the [paper bootswatch theme](https://bootswatch.com/3/paper/).
 
 ## Notes
 
