@@ -5,6 +5,8 @@
 
 [![Travis build
 status](https://travis-ci.org/tidyverse/tidytemplate.svg?branch=master)](https://travis-ci.org/tidyverse/tidytemplate)
+[![Check
+accessibility](https://img.shields.io/badge/check-accessibility-orange.svg)](http://wave.webaim.org/report#/http://tidytemplate.tidyverse.org)
 
 ## Overview
 
