@@ -1,15 +1,27 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
 # tidytemplate
-[![Travis build status](https://travis-ci.org/tidyverse/tidytemplate.svg?branch=master)](https://travis-ci.org/tidyverse/tidytemplate)
 
-tidytemplate provides a custom [pkgdown](https://pkgdown.r-lib.org) template for core tidyverse packages (i.e. packages hosted by the [tidyverse organisation](https://github.com/tidyverse)). Please don't use it for your own package.
+[![Travis build
+status](https://travis-ci.org/tidyverse/tidytemplate.svg?branch=master)](https://travis-ci.org/tidyverse/tidytemplate)
 
-The theme is built on top of the [paper bootswatch theme](https://bootswatch.com/3/paper/).
+## Overview
+
+tidytemplate provides a custom [pkgdown](https://pkgdown.r-lib.org)
+template for core tidyverse packages (i.e. packages hosted by the
+[tidyverse organisation](https://github.com/tidyverse)). Please don’t
+use it for your own package.
+
+The theme is built on top of the [paper bootswatch
+theme](https://bootswatch.com/3/paper/).
 
 ## Notes
 
-`tidyverse.css` is generated from files in `scss`. Regenerate with this code:
+`tidyverse.css` is generated from files in `scss`. Regenerate with this
+code:
 
-```R
+``` r
 # devtools::install_github("rstudio/sassr")
 library(sassr)
 compile_sass(
@@ -18,4 +30,3 @@ compile_sass(
   options = sass_options(output_style = "nested")
 )
 ```
-
