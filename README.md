@@ -6,9 +6,15 @@ The theme is built on top of the [paper bootswatch theme](https://bootswatch.com
 
 ## Notes
 
-To regenerate `tidyverse.css`, first install [sass](https://sass-lang.com/install), then run:
+`tidyverse.css` is generated from files in `scss`. Regenerate with this code:
 
-```bash
-# gem install sass
-sass scss/tidyverse.scss inst/pkgdown/assets/tidyverse.css
+```R
+# devtools::install_github("rstudio/sassr")
+library(sassr)
+compile_sass(
+  "scss/tidyverse.scss",
+  output = "inst/pkgdown/assets/tidyverse.css",
+  options = sass_options(output_style = "nested")
+)
 ```
+
