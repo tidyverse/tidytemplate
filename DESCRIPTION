@@ -12,3 +12,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.0
+Imports: 
+    pkgdown (>= 1.1.0.9000)
+Remotes:
+    r-lib/pkgdown
