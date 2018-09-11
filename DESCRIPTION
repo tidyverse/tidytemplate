@@ -16,3 +16,5 @@ Imports:
     pkgdown (>= 1.1.0.9000)
 Remotes:
     r-lib/pkgdown
+URL: https://github.com/tidyverse/tidytemplate
+BugReports: https://github.com/tidyverse/tidytemplate/issues
