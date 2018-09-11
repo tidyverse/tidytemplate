@@ -1,4 +1,5 @@
 # tidytemplate
+[![Travis build status](https://travis-ci.org/tidyverse/tidytemplate.svg?branch=master)](https://travis-ci.org/tidyverse/tidytemplate)
 
 tidytemplate provides a custom [pkgdown](https://pkgdown.r-lib.org) template for core tidyverse packages (i.e. packages hosted by the [tidyverse organisation](https://github.com/tidyverse)). Please don't use it for your own package.
 
