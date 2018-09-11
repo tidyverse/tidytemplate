@@ -2,6 +2,8 @@ template:
   package: tidytemplate
   default_assets: false
 
+url: https://tidytemplate.tidyverse.org
+
 home:
   strip_header: true
 
