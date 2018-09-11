@@ -19,6 +19,20 @@
 <script src="{{#site}}{{root}}{{/site}}jquery.sticky-kit.min.js"></script>
 <script src="{{#site}}{{root}}{{/site}}pkgdown.js"></script>
 
+<meta property="og:title" content="{{{pagetitle}}}" />
+{{#opengraph}}
+{{#description}}
+<meta property="og:description" content="{{.}}" />
+{{/description}}
+{{#image}}
+<meta property="og:image" content="{{{.}}}" />
+{{/image}}
+<meta name="twitter:card" content="summary" />
+{{/opengraph}}
+
+{{#yaml}}{{#noindex}}<meta name="robots" content="noindex" />{{/noindex}}{{/yaml}}
+{{#development}}{{#in_dev}}<meta name="robots" content="noindex">{{/in_dev}}{{/development}}
+
 <!-- mathjax -->
 <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
