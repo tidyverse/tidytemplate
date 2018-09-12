@@ -18,20 +18,42 @@ use it for your own package.
 The theme is built on top of the [paper bootswatch
 theme](https://bootswatch.com/3/paper/).
 
-## Notes
+## Using tidytemplate
 
-`tidyverse.css` is generated from files in `scss`. Regenerate with this
-code:
+Make sure your `_pkgdown.yaml` contains:
 
-``` r
-# devtools::install_github("rstudio/sassr")
-library(sassr)
-compile_sass(
-  "scss/tidyverse.scss",
-  output = "inst/pkgdown/assets/tidyverse.css",
-  options = sass_options(output_style = "nested")
-)
+``` yaml
+template:
+  package: tidytemplate
+
+home:
+  strip_header: true
 ```
+
+## CSS files
+
+Threee CSS files play a role in styling the site:
+
+  - `tidyverse.css` is generated from files in `scss/` written by Robby
+    Shaver. Generally you should not touch these files; Robby is the
+    owner. If needed you can regenerate `tidyverse.css` by runnig this
+    code:
+    
+    ``` r
+    # devtools::install_github("rstudio/sassr")
+    library(sassr)
+    compile_sass(
+      "scss/tidyverse.scss",
+      output = "inst/pkgdown/assets/tidyverse.css",
+      options = sass_options(output_style = "nested")
+    )
+    ```
+
+  - `pkgdown.css` comes from pkgdown.
+
+  - `tidyverse-2.css` lives in `inst/asserts/tidyverse-2.css`.
+    Generally, this is the only file you should touch if you want to
+    make changes to the style of the site.
 
 ## Lorem Ipsum
 
