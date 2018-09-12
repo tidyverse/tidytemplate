@@ -3,6 +3,9 @@ template:
 
 url: https://tidytemplate.tidyverse.org
 
+development:
+  mode: auto
+
 home:
   strip_header: true
 

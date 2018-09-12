@@ -26,6 +26,9 @@ Make sure your `_pkgdown.yaml` contains:
 template:
   package: tidytemplate
 
+development:
+  mode: auto
+
 home:
   strip_header: true
 ```

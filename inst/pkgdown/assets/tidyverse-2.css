@@ -4,6 +4,28 @@ h2 {font-size: 30px;}
 
 /* navbar ----------------------------------------------- */
 
+.navbar .info {
+  float: left;
+  height: 50px;
+  width: 140px;
+  font-size: 80%;
+  position: relative;
+  margin-left: 5px;
+}
+.navbar .info .partof {
+  position: absolute;
+  top: 0;
+}
+.navbar .info .version {
+  position: absolute;
+  bottom: 0;
+}
+.navbar .info .version-danger {
+  font-weight: bold;
+  color: orange;
+}
+
+
 .navbar-toggle {
   margin-top: 8px;
   margin-bottom: 5px;

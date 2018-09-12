@@ -11,7 +11,10 @@
 
       <div class="navbar-brand-container">
         <a class="navbar-brand" href="{{#site}}{{root}}{{/site}}index.html">{{#package}}{{name}}{{/package}}</a>
-        <small class="tidyverse">part of the <a href="https://tidyverse.org">tidyverse</a></small>
+        <div class="info">
+          <span class="partof">part of the <a href="https://tidyverse.org">tidyverse</a></span>
+          <span class="version version-{{#development}}{{version_label}}{{/development}}" data-toggle="tooltip" data-placement="bottom" title="{{#development}}{{version_tooltip}}{{/development}}">{{#package}}{{version}}{{/package}}</span>
+        </div>
       </div>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
