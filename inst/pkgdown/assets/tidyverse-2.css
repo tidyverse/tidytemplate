@@ -25,6 +25,10 @@ h2 {font-size: 30px;}
   color: orange;
 }
 
+.navbar-form {
+  margin-top: 3px;
+  margin-bottom: 0;
+}
 
 .navbar-toggle {
   margin-top: 8px;
