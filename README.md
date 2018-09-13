@@ -33,6 +33,17 @@ home:
   strip_header: true
 ```
 
+You can customise the “part of” in the header, and the footer text with
+template parameters:
+
+``` yaml
+template:
+  package: tidytemplate
+  params:
+    part_of: tidymodels
+    footer: ...
+```
+
 ## CSS files
 
 Threee CSS files play a role in styling the site:
