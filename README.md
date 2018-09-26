@@ -44,6 +44,14 @@ template:
     footer: ...
 ```
 
+If you deploy to github pages automatically using travis, add the
+following to your `.travis.yml`:
+
+``` yaml
+r_github_packages:
+  - tidyverse/tidytemplate
+```
+
 ## CSS files
 
 Threee CSS files play a role in styling the site:
