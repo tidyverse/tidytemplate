@@ -48,6 +48,17 @@ template:
     footer: ...
 ```
 
+To work properly, `tidytemplate` requires the css files in 
+`inst/pkgdown/assets/`. Because of this, you should not set 
+`default_assets: false` in your `_pkgdown.yaml`. 
+
+```yaml
+template:
+  package: tidytemplate
+  # Do not do this!
+  default_assets: false
+```
+
 If you deploy to github pages automatically using travis, add the following
 to your `.travis.yml`:
 
