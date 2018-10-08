@@ -44,6 +44,17 @@ template:
     footer: ...
 ```
 
+To work properly, `tidytemplate` requires the css files in
+`inst/pkgdown/assets/`. Because of this, you should not set
+`default_assets: false` in your `_pkgdown.yaml`.
+
+``` yaml
+template:
+  package: tidytemplate
+  # Do not do this!
+  default_assets: false
+```
+
 If you deploy to github pages automatically using travis, add the
 following to your `.travis.yml`:
 
@@ -54,11 +65,11 @@ r_github_packages:
 
 ## CSS files
 
-Threee CSS files play a role in styling the site:
+Three CSS files play a role in styling the site:
 
   - `tidyverse.css` is generated from files in `scss/` written by Robby
     Shaver. Generally you should not touch these files; Robby is the
-    owner. If needed you can regenerate `tidyverse.css` by runnig this
+    owner. If needed you can regenerate `tidyverse.css` by running this
     code:
     
     ``` r
@@ -73,7 +84,7 @@ Threee CSS files play a role in styling the site:
 
   - `pkgdown.css` comes from pkgdown.
 
-  - `tidyverse-2.css` lives in `inst/asserts/tidyverse-2.css`.
+  - `tidyverse-2.css` lives in `inst/pkgdown/assets/tidyverse-2.css`.
     Generally, this is the only file you should touch if you want to
     make changes to the style of the site.
 
