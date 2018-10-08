@@ -70,11 +70,11 @@ r_github_packages:
 
 ## CSS files
 
-Threee CSS files play a role in styling the site:
+Three CSS files play a role in styling the site:
 
 * `tidyverse.css` is generated from files in `scss/` written by Robby Shaver.
    Generally you should not touch these files; Robby is the owner. If needed
-   you can regenerate `tidyverse.css` by runnig this code:
+   you can regenerate `tidyverse.css` by running this code:
 
     ```{r, eval = FALSE}
     # devtools::install_github("rstudio/sassr")
@@ -88,7 +88,7 @@ Threee CSS files play a role in styling the site:
 
 *  `pkgdown.css` comes from pkgdown.
 
-*  `tidyverse-2.css` lives in `inst/asserts/tidyverse-2.css`. Generally,
+*  `tidyverse-2.css` lives in `inst/pkgdown/assets/tidyverse-2.css`. Generally,
    this is the only file you should touch if you want to make changes to the 
    style of the site.
 
