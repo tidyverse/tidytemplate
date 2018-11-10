@@ -74,9 +74,9 @@ Three CSS files play a role in styling the site:
     
     ``` r
     # devtools::install_github("rstudio/sassr")
-    library(sassr)
-    compile_sass(
-      "scss/tidyverse.scss",
+    library(sass)
+    sass(
+      sass_file("scss/tidyverse.scss"),
       output = "inst/pkgdown/assets/tidyverse.css",
       options = sass_options(output_style = "nested")
     )
