@@ -4,14 +4,10 @@ language: R
 sudo: false
 cache: packages
 
-after_success:
+before_deploy:
 - R CMD INSTALL .
-- Rscript -e 'pkgdown::build_site()'
 
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  local-dir: docs
-  on:
-    branch: master
+  provider: script
+  script: Rscript -e 'pkgdown::deploy_site_github()'
+  skip_cleanup: true
