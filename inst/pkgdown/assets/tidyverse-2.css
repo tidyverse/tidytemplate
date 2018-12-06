@@ -6,6 +6,8 @@ h2 {font-size: 30px;}
   margin-top: 10px;
 }
 
+.ref-arguments th {vertical-align: top;}
+
 /* navbar ----------------------------------------------- */
 
 .navbar .info {
