@@ -107,7 +107,7 @@
 <a class="sourceLine" id="cb3-4" data-line-number="4">  <span class="fu">default_assets:</span><span class="at"> false</span></a></code></pre></div>
 <p>If you deploy to github pages automatically using travis, add the following to your <code>.travis.yml</code>:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="fu">r_github_packages:</span></a>
-<a class="sourceLine" id="cb4-2" data-line-number="2">  <span class="kw">-</span> tidyverse/tidytemplate</a></code></pre></div>
+<a class="sourceLine" id="cb4-2" data-line-number="2">  <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Arithmetic">-</a></span> tidyverse/tidytemplate</a></code></pre></div>
 </div>
 <div id="css-files" class="section level2">
 <h2 class="hasAnchor">
@@ -117,7 +117,7 @@
 <li>
 <p><code>tidyverse.css</code> is generated from files in <code>scss/</code> written by Robby Shaver. Generally you should not touch these files; Robby is the owner. If needed you can regenerate <code>tidyverse.css</code> by running this code:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="co"># devtools::install_github("rstudio/sassr")</span></a>
-<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="kw">library</span>(sass)</a>
+<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(sass)</a>
 <a class="sourceLine" id="cb5-3" data-line-number="3"><span class="kw">sass</span>(</a>
 <a class="sourceLine" id="cb5-4" data-line-number="4">  <span class="kw">sass_file</span>(<span class="st">"scss/tidyverse.scss"</span>),</a>
 <a class="sourceLine" id="cb5-5" data-line-number="5">  <span class="dt">output =</span> <span class="st">"inst/pkgdown/assets/tidyverse.css"</span>,</a>

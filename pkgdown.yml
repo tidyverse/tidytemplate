@@ -1,6 +1,6 @@
 pandoc: '2.2'
-pkgdown: 1.1.0.9000
-pkgdown_sha: bb01c8e3810944b7d9d218779ae7f7ab88820a14
+pkgdown: 1.2.0.9000
+pkgdown_sha: 3b4d5b3d724d923973cc28f1c975833c8dba0f29
 articles: []
 urls:
   reference: https://tidytemplate.tidyverse.org/reference
