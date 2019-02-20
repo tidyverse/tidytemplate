@@ -7,7 +7,7 @@ h3 {font-size: 23px;}
   margin-top: 10px;
 }
 
-/* reduce h3 line-height for proper nesting under h2 */
+/* reduce h3 margin for proper nesting under h2 */
 .contents h3 {margin-top: -60px}
 
 .ref-arguments th {vertical-align: top;}
