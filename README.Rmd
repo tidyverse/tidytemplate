@@ -77,7 +77,7 @@ Three CSS files play a role in styling the site:
    you can regenerate `tidyverse.css` by running this code:
 
     ```{r, eval = FALSE}
-    # devtools::install_github("rstudio/sassr")
+    # devtools::install_github("rstudio/sass")
     library(sass)
     sass(
       sass_file("scss/tidyverse.scss"),

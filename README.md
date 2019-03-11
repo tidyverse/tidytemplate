@@ -73,7 +73,7 @@ Three CSS files play a role in styling the site:
     code:
     
     ``` r
-    # devtools::install_github("rstudio/sassr")
+    # devtools::install_github("rstudio/sass")
     library(sass)
     sass(
       sass_file("scss/tidyverse.scss"),
