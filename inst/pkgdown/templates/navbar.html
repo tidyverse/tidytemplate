@@ -11,7 +11,7 @@
 
       <div class="navbar-brand-container">
         <a class="navbar-brand" href="{{#site}}{{root}}{{/site}}index.html">{{#package}}{{name}}{{/package}}</a>
-        <div class="info">
+        <div class="info hidden-xs hidden-sm">
           <span class="partof">part of {{#yaml}}{{{part_of}}}{{^part_of}}the <a href="https://tidyverse.org">tidyverse</a>{{/part_of}}{{/yaml}}</span>
           <span class="version version-{{#development}}{{version_label}}{{/development}}" data-toggle="tooltip" data-placement="bottom" title="{{#development}}{{version_tooltip}}{{/development}}">{{#package}}{{version}}{{/package}}</span>
         </div>
