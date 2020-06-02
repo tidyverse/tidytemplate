@@ -12,11 +12,13 @@
 <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="apple-touch-icon-60x60.png">
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="tidyverse.css" rel="stylesheet">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="tidyverse.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
+<script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><link href="tidyverse-2.css" rel="stylesheet">
+<!--optional theme--><link href=".css" rel="stylesheet">
 <meta property="og:title" content="pkgdown Templates for Core Tidyverse Packages">
 <meta property="og:description" content="This is a private template for use by core tidyverse packages.
    Please don't use for your own code.">
@@ -33,7 +35,7 @@
   gtag('config', 'UA-115082821-1');
 </script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#toc">
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -47,7 +49,7 @@
 
       <div class="navbar-brand-container">
         <a class="navbar-brand" href="index.html">tidytemplate</a>
-        <div class="info">
+        <div class="info hidden-xs hidden-sm">
           <span class="partof">part of the <a href="https://tidyverse.org">tidyverse</a></span>
           <span class="version version-danger" data-toggle="tooltip" data-placement="bottom" title="Unreleased version">0.0.0.9000</span>
         </div>
@@ -97,12 +99,13 @@
 <a class="sourceLine" id="cb1-6" data-line-number="6"></a>
 <a class="sourceLine" id="cb1-7" data-line-number="7"><span class="fu">home:</span></a>
 <a class="sourceLine" id="cb1-8" data-line-number="8">  <span class="fu">strip_header:</span><span class="at"> true</span></a></code></pre></div>
-<p>You can customise the “part of” in the header, and the footer text with template parameters:</p>
+<p>You can customise the “part of” in the header, the footer text, and add an optional tidymodels CSS theme with template parameters:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="fu">template:</span></a>
 <a class="sourceLine" id="cb2-2" data-line-number="2">  <span class="fu">package:</span><span class="at"> tidytemplate</span></a>
 <a class="sourceLine" id="cb2-3" data-line-number="3">  <span class="fu">params:</span></a>
 <a class="sourceLine" id="cb2-4" data-line-number="4">    <span class="fu">part_of:</span><span class="at"> tidymodels</span></a>
-<a class="sourceLine" id="cb2-5" data-line-number="5">    <span class="fu">footer:</span><span class="at"> ...</span></a></code></pre></div>
+<a class="sourceLine" id="cb2-5" data-line-number="5">    <span class="fu">footer:</span><span class="at"> ...</span></a>
+<a class="sourceLine" id="cb2-6" data-line-number="6">    <span class="fu">theme:</span><span class="at"> tidymodels</span></a></code></pre></div>
 <p>To work properly, <code>tidytemplate</code> requires the css files in <code>inst/pkgdown/assets/</code>. Because of this, you should not set <code>default_assets: false</code> in your <code>_pkgdown.yaml</code>.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="fu">template:</span></a>
 <a class="sourceLine" id="cb3-2" data-line-number="2">  <span class="fu">package:</span><span class="at"> tidytemplate</span></a>
@@ -110,7 +113,7 @@
 <a class="sourceLine" id="cb3-4" data-line-number="4">  <span class="fu">default_assets:</span><span class="at"> false</span></a></code></pre></div>
 <p>If you deploy to github pages automatically using travis, add the following to your <code>.travis.yml</code>:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="fu">r_github_packages:</span></a>
-<a class="sourceLine" id="cb4-2" data-line-number="2">  <span class="kw"><a href="https://rdrr.io/r/base/Arithmetic.html">-</a></span> tidyverse/tidytemplate</a></code></pre></div>
+<a class="sourceLine" id="cb4-2" data-line-number="2">  <span class="kw">-</span> tidyverse/tidytemplate</a></code></pre></div>
 </div>
 <div id="css-files" class="section level2">
 <h2 class="hasAnchor">
@@ -119,16 +122,17 @@
 <ul>
 <li>
 <p><code>tidyverse.css</code> is generated from files in <code>scss/</code> written by Robby Shaver. Generally you should not touch these files; Robby is the owner. If needed you can regenerate <code>tidyverse.css</code> by running this code:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="co"># devtools::install_github("rstudio/sassr")</span></a>
-<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(sass)</a>
-<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="kw">sass</span>(</a>
-<a class="sourceLine" id="cb5-4" data-line-number="4">  <span class="kw">sass_file</span>(<span class="st">"scss/tidyverse.scss"</span>),</a>
-<a class="sourceLine" id="cb5-5" data-line-number="5">  <span class="dt">output =</span> <span class="st">"inst/pkgdown/assets/tidyverse.css"</span>,</a>
-<a class="sourceLine" id="cb5-6" data-line-number="6">  <span class="dt">options =</span> <span class="kw">sass_options</span>(<span class="dt">output_style =</span> <span class="st">"nested"</span>)</a>
-<a class="sourceLine" id="cb5-7" data-line-number="7">)</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="r"><span class="co"># devtools::install_github("rstudio/sass")</span>
+<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">sass</span>)
+<span class="fu">sass</span>(
+  <span class="fu">sass_file</span>(<span class="st">"scss/tidyverse.scss"</span>),
+  <span class="kw">output</span> <span class="kw">=</span> <span class="st">"inst/pkgdown/assets/tidyverse.css"</span>,
+  <span class="kw">options</span> <span class="kw">=</span> <span class="fu">sass_options</span>(<span class="kw">output_style</span> <span class="kw">=</span> <span class="st">"nested"</span>)
+)</pre></div>
 </li>
 <li><p><code>pkgdown.css</code> comes from pkgdown.</p></li>
 <li><p><code>tidyverse-2.css</code> lives in <code>inst/pkgdown/assets/tidyverse-2.css</code>. Generally, this is the only file you should touch if you want to make changes to the style of the site.</p></li>
+<li><p><code>tidymodels.css</code> is an optional CSS file that lives in <code>inst/pkgdown/assets/</code>. This file is loaded when the <code>theme:</code> parameter is used.</p></li>
 </ul>
 </div>
 <div id="lorem-ipsum" class="section level2">
@@ -144,11 +148,11 @@
 </div>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
-<li>Browse source code at <br><a href="https://github.com/tidyverse/tidytemplate">https://​github.com/​tidyverse/​tidytemplate</a>
+<li>Browse source code at <br><a href="https://github.com/tidyverse/tidytemplate/">https://​github.com/​tidyverse/​tidytemplate/​</a>
 </li>
 <li>Report a bug at <br><a href="https://github.com/tidyverse/tidytemplate/issues">https://​github.com/​tidyverse/​tidytemplate/​issues</a>
 </li>
