@@ -1,5 +1,7 @@
 template:
   package: tidytemplate
+  params:
+    theme:
 
 url: https://tidytemplate.tidyverse.org
 
