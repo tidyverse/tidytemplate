@@ -38,7 +38,7 @@ home:
   strip_header: true
 ```
 
-You can customise the "part of" in the header, and the footer text with template parameters:
+You can customise the "part of" in the header, the footer text, and add an optional tidymodels CSS theme with template parameters:
 
 ```yaml
 template:
@@ -46,6 +46,7 @@ template:
   params:
     part_of: tidymodels
     footer: ...
+    theme: tidymodels
 ```
 
 To work properly, `tidytemplate` requires the css files in 
@@ -91,6 +92,8 @@ Three CSS files play a role in styling the site:
 *  `tidyverse-2.css` lives in `inst/pkgdown/assets/tidyverse-2.css`. Generally,
    this is the only file you should touch if you want to make changes to the 
    style of the site.
+   
+* `tidymodels.css` is an optional CSS file that lives in `inst/pkgdown/assets/`. This file is loaded when the `theme:` parameter is used.  
 
 ## Lorem Ipsum
 
