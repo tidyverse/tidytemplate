@@ -93,7 +93,7 @@ Three CSS files play a role in styling the site:
    this is the only file you should touch if you want to make changes to the 
    style of the site.
    
-* `tidymodels.css` is an optional CSS file that lives in `inst/pkgdown/assets/`. This file is loaded when the `theme:` parameter is used.  
+* `tidymodels.css` is an optional CSS file written by [Desirée De Leon](http://desiree.rbind.io) that lives in `inst/pkgdown/assets/`. This file is loaded when the `theme:` parameter is used.  
 
 ## Lorem Ipsum
 

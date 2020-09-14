@@ -4,6 +4,7 @@ Version: 0.0.0.9000
 Authors@R: c(
     person("Hadley", "Wickham", , "hadley@rstudio.com", role = c("aut", "cre")),
     person("Robby", "Shaver", role = "aut"),
+    person("Desirée", "De Leon", role = "aut", comment = c(ORCID = "0000-0003-2217-9067")),
     person("RStudio", role = "cph")
   )
 Description: This is a private template for use by core tidyverse packages.
