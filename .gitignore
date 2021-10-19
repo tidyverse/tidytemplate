@@ -3,3 +3,4 @@
 .RData
 .sass-cache
 docs
+inst/doc

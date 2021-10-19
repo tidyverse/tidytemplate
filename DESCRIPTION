@@ -18,5 +18,9 @@ Imports:
 URL: https://github.com/tidyverse/tidytemplate
 BugReports: https://github.com/tidyverse/tidytemplate/issues
 Roxygen: list(markdown = TRUE)
-Remotes:  
+Remotes: 
     r-lib/pkgdown
+Suggests: 
+    rmarkdown,
+    knitr
+VignetteBuilder: knitr

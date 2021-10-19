@@ -1,0 +1,19 @@
+// Use smaller headings with more vertical space
+
+h2 {
+  @include font-size(2rem);
+  margin-top: 2rem;
+}
+h3 {
+  @include font-size(1.5rem);
+  margin-top: 1.5rem;
+}
+h4 {
+  @include font-size(1.2rem);
+  font-weight: bold;
+  margin-top: 1.2rem;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+}
