@@ -1,0 +1,12 @@
+template:
+  bootstrap: 5
+  bslib:
+    primary: "#1e2c3c"
+    base_font: {google: "Source Sans Pro"}
+    code_font: {google: "Source Code Pro"}
+    font_scale: 1.2
+    link-color: "#4D8DC9"
+
+navbar:
+  bg: primary
+  type: dark

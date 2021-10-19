@@ -1,7 +1,5 @@
 template:
   package: tidytemplate
-  params:
-    theme:
 
 url: https://tidytemplate.tidyverse.org
 
@@ -12,12 +10,8 @@ authors:
   Desirée De Leon:
     href: https://desiree.rbind.io
 
-home:
-  strip_header: true
-
 navbar:
   title: ~
-  type: default
   left:
   - text: Reference
     href: reference/index.html
