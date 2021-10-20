@@ -1,0 +1,85 @@
+// Headings ----------------------------------------------------
+// Use smaller headings with more vertical space
+
+h2 {
+  @include font-size(1.8rem);
+  margin-top: 2rem;
+}
+h3 {
+  @include font-size(1.5rem);
+  margin-top: 1.5rem;
+}
+h4 {
+  @include font-size(1.2rem);
+  font-weight: bold;
+  margin-top: 1.2rem;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+.page-header {
+  min-height: 0;
+}
+// Remove once page-header does all styling
+.page-header.border-bottom { border-bottom: none !important; }
+.page-header.pb-2 { padding-bottom: 0 !important; }
+
+h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+#pkgdown-sidebar {
+  line-height: 1.4;
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $primary;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+  }
+  a:any-link {
+    color: #666;
+  }
+  .list-unstyled li {
+    margin-bottom: 0.3rem;
+  }
+}
+
+nav.navbar {
+  border-bottom: 1px solid change-color(#ccc, $alpha: 0.50);
+  // box-shadow: 0px 5px 5px change-color(#ccc, $alpha: 0.50);
+}
+nav.navbar a.navbar-brand {
+  color: $primary;
+}
+
+// Code ---------------------------------------------------------
+pre, code {
+  background-color: change-color($primary, $alpha: 0.03);
+  border: none
+}
+
+// Lists ---------------------------------------------------------
+ol, ul {
+  padding-left: 1.5rem;
+}
+ul {
+  list-style-type: disc;
+}
+
+// Give top-level lists some margin between bullets. This only affects
+// "compact" lists because of margin-collapsing
+li {
+  margin-bottom: 0.25rem;
+  li { margin-bottom: 0; }
+}
+
+// Give nested lists a little breathing room
+ul ul, ol ol, ul ol, ol ul {
+  margin: 1rem 0;
+}
