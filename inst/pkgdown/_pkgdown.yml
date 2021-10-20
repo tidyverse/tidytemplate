@@ -2,7 +2,7 @@ template:
   bootstrap: 5
   bslib:
     primary: "#1e2c3c"
-    base_font: {google: "Source Sans Pro"}
+    base_font: {google: {family: "Source Sans Pro", wght: [300, 400]}}
     code_font: {google: "Source Code Pro"}
     font_scale: 1.2
     link-color: "#4D8DC9"
