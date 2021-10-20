@@ -10,3 +10,19 @@ template:
 navbar:
   bg: primary
   type: dark
+
+authors:
+  Davis Vaughan:
+    href: https://github.com/DavisVaughan
+  Gábor Csárdi:
+    href: https://github.com/gaborcsardi
+  Hadley Wickham:
+    href: http://hadley.nz
+  Jennifer Bryan:
+    href: https://jennybryan.org
+  Jim Hester:
+    href: https://www.jimhester.com/
+  Julia Silge:
+    href: https://juliasilge.com/
+  Lionel Henry:
+    href: https://github.com/lionel-
