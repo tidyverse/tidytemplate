@@ -1,7 +1,7 @@
 // Use smaller headings with more vertical space
 
 h2 {
-  @include font-size(2rem);
+  @include font-size(1.8rem);
   margin-top: 2rem;
 }
 h3 {
