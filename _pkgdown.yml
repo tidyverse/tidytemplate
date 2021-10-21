@@ -4,9 +4,6 @@ template:
 
 url: https://tidytemplate.tidyverse.org
 
-development:
-  mode: auto
-
 authors:
   Desirée De Leon:
     href: https://desiree.rbind.io
