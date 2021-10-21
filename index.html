@@ -51,18 +51,39 @@
         <a class="navbar-brand" href="index.html">tidytemplate</a>
         <div class="info hidden-xs hidden-sm">
           <span class="partof">part of the <a href="https://tidyverse.org">tidyverse</a></span>
-          <span class="version version-danger" data-toggle="tooltip" data-placement="bottom" title="Unreleased version">0.0.0.9000</span>
+          <span class="version version-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.0</span>
         </div>
       </div>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
 <li>
+  <a href="index.html">
+    <span class="fas fa-home fa-lg"></span>
+     
+  </a>
+</li>
+<li>
   <a href="reference/index.html">Reference</a>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Articles
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+<li>
+      <a href="articles/bullets.html">Bullets</a>
+    </li>
+    <li>
+      <a href="articles/headings.html">Headings</a>
+    </li>
+  </ul>
+</li>
         <li>
-  <a href="https://github.com/tidyverse/tidytemplate">
-    <span class="fa fa-github fa-lg"></span>
+  <a href="https://github.com/tidyverse/tidytemplate/">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -78,73 +99,27 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="tidytemplate" class="section level1">
-
+<div id="tidytemplate-" class="section level1">
+<div class="page-header"><h1 class="hasAnchor">
+<a href="#tidytemplate-" class="anchor"></a>tidytemplate <img src="reference/figures/logo.png" align="right">
+</h1></div>
+<!-- badges: start -->
 
 <div id="overview" class="section level2">
 <h2 class="hasAnchor">
 <a href="#overview" class="anchor"></a>Overview</h2>
-<p>tidytemplate provides a custom <a href="https://pkgdown.r-lib.org">pkgdown</a> template for core tidyverse packages (i.e. packages hosted by the <a href="https://github.com/tidyverse">tidyverse organisation</a>). Please don’t use it for your own package.</p>
-<p>The theme is built on top of the <a href="https://bootswatch.com/3/paper/">paper bootswatch theme</a>.</p>
+<p>tidytemplate provides a custom <a href="https://pkgdown.r-lib.org">pkgdown</a> template for <a href="https://github.com/tidyverse">tidyverse packages</a>.</p>
+<p>Please don’t use it for your own package.</p>
 </div>
 <div id="using-tidytemplate" class="section level2">
 <h2 class="hasAnchor">
 <a href="#using-tidytemplate" class="anchor"></a>Using tidytemplate</h2>
-<p>Make sure your <code>_pkgdown.yaml</code> contains:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="fu">template:</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">  <span class="fu">package:</span><span class="at"> tidytemplate</span></a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="fu">development:</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5">  <span class="fu">mode:</span><span class="at"> auto</span></a>
-<a class="sourceLine" id="cb1-6" data-line-number="6"></a>
-<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="fu">home:</span></a>
-<a class="sourceLine" id="cb1-8" data-line-number="8">  <span class="fu">strip_header:</span><span class="at"> true</span></a></code></pre></div>
-<p>You can customise the “part of” in the header, the footer text, and add an optional tidymodels CSS theme with template parameters:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="fu">template:</span></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2">  <span class="fu">package:</span><span class="at"> tidytemplate</span></a>
-<a class="sourceLine" id="cb2-3" data-line-number="3">  <span class="fu">params:</span></a>
-<a class="sourceLine" id="cb2-4" data-line-number="4">    <span class="fu">part_of:</span><span class="at"> tidymodels</span></a>
-<a class="sourceLine" id="cb2-5" data-line-number="5">    <span class="fu">footer:</span><span class="at"> ...</span></a>
-<a class="sourceLine" id="cb2-6" data-line-number="6">    <span class="fu">theme:</span><span class="at"> tidymodels</span></a></code></pre></div>
-<p>To work properly, <code>tidytemplate</code> requires the css files in <code>inst/pkgdown/assets/</code>. Because of this, you should not set <code>default_assets: false</code> in your <code>_pkgdown.yaml</code>.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="fu">template:</span></a>
-<a class="sourceLine" id="cb3-2" data-line-number="2">  <span class="fu">package:</span><span class="at"> tidytemplate</span></a>
-<a class="sourceLine" id="cb3-3" data-line-number="3">  <span class="co"># Do not do this!</span></a>
-<a class="sourceLine" id="cb3-4" data-line-number="4">  <span class="fu">default_assets:</span><span class="at"> false</span></a></code></pre></div>
-<p>If you deploy to github pages automatically using travis, add the following to your <code>.travis.yml</code>:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="fu">r_github_packages:</span></a>
-<a class="sourceLine" id="cb4-2" data-line-number="2">  <span class="kw">-</span> tidyverse/tidytemplate</a></code></pre></div>
-</div>
-<div id="css-files" class="section level2">
-<h2 class="hasAnchor">
-<a href="#css-files" class="anchor"></a>CSS files</h2>
-<p>Three CSS files play a role in styling the site:</p>
-<ul>
-<li>
-<p><code>tidyverse.css</code> is generated from files in <code>scss/</code> written by Robby Shaver. Generally you should not touch these files; Robby is the owner. If needed you can regenerate <code>tidyverse.css</code> by running this code:</p>
-<div class="sourceCode" id="cb5"><pre class="downlit">
-<span class="co"># devtools::install_github("rstudio/sass")</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">sass</span><span class="op">)</span>
-<span class="fu">sass</span><span class="op">(</span>
-  <span class="fu">sass_file</span><span class="op">(</span><span class="st">"scss/tidyverse.scss"</span><span class="op">)</span>,
-  output <span class="op">=</span> <span class="st">"inst/pkgdown/assets/tidyverse.css"</span>,
-  options <span class="op">=</span> <span class="fu">sass_options</span><span class="op">(</span>output_style <span class="op">=</span> <span class="st">"nested"</span><span class="op">)</span>
-<span class="op">)</span></pre></div>
-</li>
-<li><p><code>pkgdown.css</code> comes from pkgdown.</p></li>
-<li><p><code>tidyverse-2.css</code> lives in <code>inst/pkgdown/assets/tidyverse-2.css</code>. Generally, this is the only file you should touch if you want to make changes to the style of the site.</p></li>
-<li><p><code>tidymodels.css</code> is an optional CSS file written by <a href="http://desiree.rbind.io">Desirée De Leon</a> that lives in <code>inst/pkgdown/assets/</code>. This file is loaded when the <code>theme:</code> parameter is used.</p></li>
-</ul>
-</div>
-<div id="lorem-ipsum" class="section level2">
-<h2 class="hasAnchor">
-<a href="#lorem-ipsum" class="anchor"></a>Lorem Ipsum</h2>
-<p>Added to make the readme long enough that I can check scrolling.</p>
-<p>Lorem ipsum dolor sit amet, ea pri paulo facete, in mel choro volumus. Dolore labitur cum no, vis copiosae appareat ex, vix antiopam iudicabit consequat in. Has equidem graecis et. Ea est partem altera, ius id agam debitis. Ex mea minim utroque, harum choro at has.</p>
-<p>Vim rebum denique ad. Vocent dignissim ea qui, mea no vocent eruditi. At vix soleat bonorum comprehensam, qui nibh sale epicurei te, ex ullum dicta sit. Sed te vide nostrud. Denique delicata ut vim.</p>
-<p>Nec no nobis scaevola, ad his commodo qualisque liberavisse. Sed porro propriae repudiare et, enim viris definitionem mei an. Ridens deserunt conceptam usu et. Cu has eros dicit, ex nec idque fabulas. Eum ei sensibus mnesarchum dissentias.</p>
-<p>Eum id essent pericula salutandi, cu mazim congue molestiae usu. No has omnesque conclusionemque, no eos nusquam offendit expetendis. Alii oratio ad usu. Et pri feugait recusabo salutandi, ius ad commune salutandi. Ut graece vivendum vim, decore qualisque mediocritatem vix cu.</p>
-<p>Ei nullam postea interesset vix, vix eu case fugit graeco, nec ut ponderum deserunt. Has ex amet neglegentur, eos et porro debet eirmod. Te pri lorem persius facilisis. Eos liber mentitum nominavi id.</p>
+<p>Add the following to <code>_pkgdown.yaml</code>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">template</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="at">  </span><span class="fu">package</span><span class="kw">:</span><span class="at"> tidytemplate</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="at">  </span><span class="fu">bootstrap</span><span class="kw">:</span><span class="at"> </span><span class="dv">5</span></span></code></pre></div>
+<p>Add the following to <code>DESCRIPTION</code>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>Config<span class="op">/</span>needs<span class="op">/</span>website<span class="op">:</span><span class="st"> </span>tidyverse<span class="op">/</span>template</span></code></pre></div>
 </div>
 </div>
   </div>
@@ -182,7 +157,7 @@
   <div class="dev-status">
 <h2>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://travis-ci.org/tidyverse/tidytemplate"><img src="https://travis-ci.org/tidyverse/tidytemplate.svg?branch=master" alt="Travis build status"></a></li>
+<li><a href="https://github.com/tidyverse/tidytemplate/actions"><img src="https://github.com/tidyverse/tidytemplate/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
 <li><a href="http://wave.webaim.org/report#/http://tidytemplate.tidyverse.org"><img src="https://img.shields.io/badge/check-accessibility-orange.svg" alt="Check accessibility"></a></li>
 </ul>
 </div>

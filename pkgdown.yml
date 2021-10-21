@@ -1,8 +1,10 @@
-pandoc: '2.2'
+pandoc: 2.7.3
 pkgdown: 1.6.1
 pkgdown_sha: ~
-articles: {}
-last_built: 2020-10-02T16:51Z
+articles:
+  bullets: bullets.html
+  headings: headings.html
+last_built: 2021-10-21T19:21Z
 urls:
   reference: https://tidytemplate.tidyverse.org/reference
   article: https://tidytemplate.tidyverse.org/articles
