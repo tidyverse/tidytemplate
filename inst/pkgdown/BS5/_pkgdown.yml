@@ -1,5 +1,4 @@
 template:
-  bootstrap: 5
   bslib:
     primary: "#447099" # "#CA225E"
     base_font: {google: {family: "Source Sans Pro", wght: [400, 600], ital: [0, 1]}}

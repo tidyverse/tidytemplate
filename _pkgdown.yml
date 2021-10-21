@@ -1,5 +1,6 @@
 template:
   package: tidytemplate
+  bootstrap: 5
 
 url: https://tidytemplate.tidyverse.org
 
