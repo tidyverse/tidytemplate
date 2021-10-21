@@ -7,7 +7,7 @@ template:
     fg: "#172431"
     bg: "#ffffff"
     border-radius: 0
-    button-border-radius: 3px
+    btn-border-radius: 3px
     grid-gutter-width: 3rem
 
 navbar:
