@@ -1,15 +1,19 @@
 template:
   bootstrap: 5
   bslib:
-    primary: "#1e2c3c"
-    base_font: {google: {family: "Source Sans Pro", wght: [300, 400]}}
+    primary: "#447099" # "#CA225E"
+    base_font: {google: {family: "Source Sans Pro", wght: [400, 600], ital: [0, 1]}}
     code_font: {google: "Source Code Pro"}
     font_scale: 1.2
-    link-color: "#4D8DC9"
+    fg: "#172431"
+    bg: "#ffffff"
+    border-radius: 0
+    button-border-radius: 3px
+    grid-gutter-width: 3rem
 
 navbar:
-  bg: primary
-  type: dark
+  bg: "#fdfdfd"
+  type: light
 
 authors:
   Davis Vaughan:
