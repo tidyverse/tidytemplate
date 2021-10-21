@@ -1,6 +1,6 @@
 Package: tidytemplate
 Title: 'pkgdown' Templates for Core 'Tidyverse' Packages
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: c(
     person("Hadley", "Wickham", , "hadley@rstudio.com", role = c("aut", "cre")),
     person("Robby", "Shaver", role = "aut"),
