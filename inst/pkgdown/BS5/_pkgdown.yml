@@ -1,0 +1,31 @@
+template:
+  bslib:
+    primary: "#447099" # "#CA225E"
+    base_font: {google: {family: "Source Sans Pro", wght: [400, 600], ital: [0, 1]}}
+    code_font: {google: "Source Code Pro"}
+    font_scale: 1.2
+    fg: "#172431"
+    bg: "#ffffff"
+    border-radius: 0
+    btn-border-radius: 3px
+    grid-gutter-width: 3rem
+
+navbar:
+  bg: "#fdfdfd"
+  type: light
+
+authors:
+  Davis Vaughan:
+    href: https://github.com/DavisVaughan
+  Gábor Csárdi:
+    href: https://github.com/gaborcsardi
+  Hadley Wickham:
+    href: http://hadley.nz
+  Jennifer Bryan:
+    href: https://jennybryan.org
+  Jim Hester:
+    href: https://www.jimhester.com/
+  Julia Silge:
+    href: https://juliasilge.com/
+  Lionel Henry:
+    href: https://github.com/lionel-

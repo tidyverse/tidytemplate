@@ -1,0 +1,169 @@
+// Headings ----------------------------------------------------
+// Use smaller headings with more vertical space
+
+h2 {
+  @include font-size(1.8rem);
+  margin-top: 2rem;
+}
+h3 {
+  @include font-size(1.5rem);
+  margin-top: 1.5rem;
+}
+h4 {
+  @include font-size(1.2rem);
+  font-weight: bold;
+  margin-top: 1.2rem;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+}
+
+.page-header {
+  border-bottom: none;
+}
+
+// Home page --------------------------------------------------------------
+
+.template-home {
+  .page-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    min-height: 0;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    border-bottom: 1px solid #f5f5f5;
+
+    @include media-breakpoint-down(sm) {
+      margin: 0.5rem 0;
+      padding: 0.5rem 0;
+    }
+  }
+  img.logo {
+    margin-left: 0;
+
+    @include media-breakpoint-down(sm) {
+      width: 100px;
+    }
+  }
+}
+
+// Navbar -----------------------------------------------------------------
+
+nav.navbar {
+  border-bottom: 1px solid #f5f5f5;
+  background-color: #fdfdfd;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  background: #fff;
+  font-weight: 600;
+  color: #444
+}
+
+.navbar-light .navbar-nav .nav-item > .nav-link:hover {
+  background: #fff;
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+  box-shadow: 0 2px 5px 0 rgba(120,120,120,.1);
+}
+.dropdown-item {
+  &:hover, &:focus {
+    background: #fff;
+    text-decoration: underline;
+  }
+}
+
+// Sidebar ----------------------------------------------------------------
+
+#pkgdown-sidebar {
+  border-left: 1px solid #f5f5f5;
+  margin-top: calc(2rem + #{$pkgdown-nav-height});
+  line-height: 1.4;
+
+  h2 {
+    font-size: $font-size-base;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+  }
+  div:first-child h2 {
+    margin-top: 0;
+  }
+  nav:first-child h2 {
+    margin-top: 0;
+  }
+
+  .list-unstyled li {
+    margin-bottom: 0.5rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f5f5f5;
+  }
+}
+
+#toc .nav {
+  a.nav-link {
+    color: inherit;
+    padding: 0.25rem 0;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+    &.active {
+      color: #444;
+      font-weight: 600;
+    }
+
+    // override pkgdown default
+    &:hover, &:focus, &.active {
+      background-color: #fff;
+    }
+  }
+}
+
+// Footer -------------------------------------------------------------
+footer {
+  margin-top: 5rem;
+  border-top: 1px solid #f5f5f5;
+  background-color: #fdfdfd;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 1rem;
+  }
+}
+
+// Code ---------------------------------------------------------
+pre, code {
+  border: none;
+  background-image: linear-gradient(-160deg, #f8f8f8 0, #f1f1f1 100%);
+}
+
+// Lists ---------------------------------------------------------
+ol, ul {
+  padding-left: 1.5rem;
+}
+ul {
+  list-style-type: disc;
+}
+
+// Give top-level lists some margin between bullets. This only affects
+// "compact" lists because of margin-collapsing
+#contents {
+  li {
+    margin-bottom: 0.25rem;
+    li { margin-bottom: 0; }
+  }
+
+  // Give nested lists a little breathing room
+  ul ul, ol ol, ul ol, ol ul {
+    margin: 1rem 0;
+  }
+}
+

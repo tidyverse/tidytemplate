@@ -1,26 +1,9 @@
 template:
   package: tidytemplate
-  params:
-    theme:
+  bootstrap: 5
 
 url: https://tidytemplate.tidyverse.org
-
-development:
-  mode: auto
 
 authors:
   Desirée De Leon:
     href: https://desiree.rbind.io
-
-home:
-  strip_header: true
-
-navbar:
-  title: ~
-  type: default
-  left:
-  - text: Reference
-    href: reference/index.html
-  right:
-  - icon: fa-github fa-lg
-    href: https://github.com/tidyverse/tidytemplate
