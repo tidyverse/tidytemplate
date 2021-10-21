@@ -3,10 +3,12 @@
 
 # tidytemplate <img src="man/figures/logo.png" align="right" />
 
-[![Travis build
-status](https://travis-ci.org/tidyverse/tidytemplate.svg?branch=master)](https://travis-ci.org/tidyverse/tidytemplate)
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/tidyverse/tidytemplate/workflows/R-CMD-check/badge.svg)](https://github.com/tidyverse/tidytemplate/actions)
 [![Check
 accessibility](https://img.shields.io/badge/check-accessibility-orange.svg)](http://wave.webaim.org/report#/http://tidytemplate.tidyverse.org)
+<!-- badges: end -->
 
 ## Overview
 
