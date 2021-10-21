@@ -14,13 +14,11 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.0
 Imports: 
-    pkgdown (>= 1.9000.9000.9000)
+    pkgdown
 URL: https://github.com/tidyverse/tidytemplate,
     https://tidytemplate.tidyverse.org
 BugReports: https://github.com/tidyverse/tidytemplate/issues
 Roxygen: list(markdown = TRUE)
-Remotes: 
-    r-lib/pkgdown
 Suggests: 
     rmarkdown,
     knitr
