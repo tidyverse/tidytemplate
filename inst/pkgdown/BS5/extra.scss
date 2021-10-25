@@ -57,13 +57,13 @@ nav.navbar {
 }
 
 .navbar-light .navbar-nav .active > .nav-link {
-  background: #fff;
+  background: transparent;
   font-weight: 600;
   color: #444
 }
 
 .navbar-light .navbar-nav .nav-item > .nav-link:hover {
-  background: #fff;
+  background: transparent;
   text-decoration: underline;
 }
 
