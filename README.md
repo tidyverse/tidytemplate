@@ -29,4 +29,4 @@ template:
 
 Add the following to `DESCRIPTION`:
 
-    Config/needs/website: tidyverse/template
+    Config/needs/website: tidyverse/tidytemplate
