@@ -1,6 +1,6 @@
 template:
   bslib:
-    primary: "#447099" # "#CA225E"
+    primary: "#447099"
     base_font: {google: {family: "Source Sans Pro", wght: [400, 600], ital: [0, 1]}}
     code_font: {google: "Source Code Pro"}
     font_scale: 1.2
@@ -11,8 +11,8 @@ template:
     grid-gutter-width: 3rem
 
 navbar:
-  bg: "#fdfdfd"
   type: light
+  bg: none
 
 authors:
   Davis Vaughan:
@@ -29,3 +29,10 @@ authors:
     href: https://juliasilge.com/
   Lionel Henry:
     href: https://github.com/lionel-
+  Christophe Dervieux:
+    href: https://github.com/cderv
+  Alison Hill:
+    href: https://www.apreshill.com
+  Yihui Xie:
+    href: http://yihui.org/
+
