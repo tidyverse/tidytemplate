@@ -9,6 +9,7 @@ template:
     border-radius: 0
     btn-border-radius: 3px
     grid-gutter-width: 3rem
+    pkgdown-nav-height: 76px
 
 navbar:
   type: light

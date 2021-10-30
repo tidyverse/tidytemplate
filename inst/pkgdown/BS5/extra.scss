@@ -64,10 +64,10 @@ h2, h3, h4, h5, h6 {
 
 // Navbar -----------------------------------------------------------------
 
-
 nav.navbar {
   border-bottom: 1px solid $faint-border;
   background-color: $navbar-background;
+  padding: 1rem 0;
 }
 
 .navbar-light .navbar-nav .active > .nav-link {
@@ -147,9 +147,13 @@ footer {
   margin-top: 5rem;
   border-top: 1px solid $faint-border;
   background-color: $footer-background;
+  padding: 1.25rem 0; // match visual height of navbar
 
   @include media-breakpoint-down(sm) {
     margin-top: 1rem;
+  }
+  p {
+    margin-bottom: 0;
   }
 
   .container {
