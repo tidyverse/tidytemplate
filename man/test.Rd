@@ -85,17 +85,6 @@ Massa placerat duis ultricies lacus sed turpis. Etiam sit amet nisl purus
 in mollis nunc sed id. Porta non pulvinar neque laoreet suspendisse interdum
 consectetur. Risus at ultrices mi tempus imperdiet nulla malesuada
 pellentesque.
-\subsection{Heading 3}{
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt
-dui ut ornare lectus. In est ante in nibh. Eu sem integer vitae justo eget.
-Massa placerat duis ultricies lacus sed turpis. Etiam sit amet nisl purus
-in mollis nunc sed id. Porta non pulvinar neque laoreet suspendisse interdum
-consectetur. Risus at ultrices mi tempus imperdiet nulla malesuada
-pellentesque.
-}
-
 }
 }
 
