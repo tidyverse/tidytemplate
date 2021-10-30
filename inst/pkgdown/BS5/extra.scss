@@ -9,11 +9,16 @@ $footer-background: $faint-background !default;
 
 h2 {
   @include font-size(1.8rem);
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
+// Reduce margin of first h2 on page
+.contents .page-header + .section h2 {
+  margin-top: 1rem;
+}
+
 h3 {
   @include font-size(1.5rem);
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 h4 {
   @include font-size(1.2rem);
@@ -27,6 +32,8 @@ h2, h3, h4, h5, h6 {
 
 .page-header {
   border-bottom: none;
+  min-height: 0;
+  h1 {margin-top: 3rem}
 }
 
 // Home page --------------------------------------------------------------
