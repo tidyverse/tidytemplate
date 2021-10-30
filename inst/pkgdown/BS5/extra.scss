@@ -144,6 +144,10 @@ footer {
   @include media-breakpoint-down(sm) {
     margin-top: 1rem;
   }
+
+  .container {
+    display: flex;
+  }
 }
 
 // Code ---------------------------------------------------------
