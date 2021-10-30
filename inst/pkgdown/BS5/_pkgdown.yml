@@ -15,6 +15,10 @@ navbar:
   bg: none
 
 authors:
+  Alison Hill:
+    href: https://www.apreshill.com
+  Christophe Dervieux:
+    href: https://github.com/cderv
   Davis Vaughan:
     href: https://github.com/DavisVaughan
   Gábor Csárdi:
@@ -29,10 +33,6 @@ authors:
     href: https://juliasilge.com/
   Lionel Henry:
     href: https://github.com/lionel-
-  Christophe Dervieux:
-    href: https://github.com/cderv
-  Alison Hill:
-    href: https://www.apreshill.com
   Yihui Xie:
     href: http://yihui.org/
 
