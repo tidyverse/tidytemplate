@@ -5,7 +5,7 @@ template:
     code_font: {google: "Source Code Pro"}
     font_scale: 1.2
     fg: "#172431"
-    bg: "#ffffff"
+    bg: "#fcfcfc"
     border-radius: 0
     btn-border-radius: 3px
     grid-gutter-width: 3rem

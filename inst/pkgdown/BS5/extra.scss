@@ -1,3 +1,9 @@
+$faint-background: #f9f9f9 !default;
+$faint-border: #f3f3f3 !default;
+
+$navbar-background: $faint-background !default;
+$footer-background: $faint-background !default;
+
 // Headings ----------------------------------------------------
 // Use smaller headings with more vertical space
 
@@ -33,7 +39,7 @@ h2, h3, h4, h5, h6 {
     min-height: 0;
     margin: 2rem 0;
     padding: 2rem 0;
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid $faint-border;
 
     @include media-breakpoint-down(sm) {
       margin: 0.5rem 0;
@@ -51,10 +57,9 @@ h2, h3, h4, h5, h6 {
 
 // Navbar -----------------------------------------------------------------
 
-$navbar-background: #fdfdfd !default;
 
 nav.navbar {
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid $faint-border;
   background-color: $navbar-background;
 }
 
@@ -82,7 +87,7 @@ nav.navbar {
 // Sidebar ----------------------------------------------------------------
 
 #pkgdown-sidebar {
-  border-left: 1px solid #f5f5f5;
+  border-left: 1px solid $faint-border;
   margin-top: calc(2rem + #{$pkgdown-nav-height});
   line-height: 1.4;
 
@@ -106,7 +111,7 @@ nav.navbar {
   @include media-breakpoint-down(sm) {
     margin-top: 1rem;
     padding: 1rem;
-    background-color: #f5f5f5;
+    background-color: $faint-border;
   }
 }
 
@@ -133,8 +138,8 @@ nav.navbar {
 // Footer -------------------------------------------------------------
 footer {
   margin-top: 5rem;
-  border-top: 1px solid #f5f5f5;
-  background-color: #fdfdfd;
+  border-top: 1px solid $faint-border;
+  background-color: $footer-background;
 
   @include media-breakpoint-down(sm) {
     margin-top: 1rem;
