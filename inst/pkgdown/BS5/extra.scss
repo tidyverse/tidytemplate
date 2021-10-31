@@ -220,7 +220,7 @@ ul {
 
 // Give top-level lists some margin between bullets. This only affects
 // "compact" lists because of margin-collapsing
-#contents {
+.contents {
   li {
     margin-bottom: 0.25rem;
     li { margin-bottom: 0; }
@@ -228,7 +228,7 @@ ul {
 
   // Give nested lists a little breathing room
   ul ul, ol ol, ul ol, ol ul {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
   }
 }
 
