@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tidytemplate.tidyverse.org/index.html</loc>
+    <loc>https://tidytemplate.tidyverse.org/404.html</loc>
   </url>
   <url>
-    <loc>https://tidytemplate.tidyverse.org/reference/ruler.html</loc>
-  </url>
-  <url>
-    <loc>https://tidytemplate.tidyverse.org/reference/test.html</loc>
+    <loc>https://tidytemplate.tidyverse.org/LICENSE-text.html</loc>
   </url>
   <url>
     <loc>https://tidytemplate.tidyverse.org/articles/bullets.html</loc>
@@ -17,5 +14,23 @@
   </url>
   <url>
     <loc>https://tidytemplate.tidyverse.org/articles/headings.html</loc>
+  </url>
+  <url>
+    <loc>https://tidytemplate.tidyverse.org/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>https://tidytemplate.tidyverse.org/authors.html</loc>
+  </url>
+  <url>
+    <loc>https://tidytemplate.tidyverse.org/index.html</loc>
+  </url>
+  <url>
+    <loc>https://tidytemplate.tidyverse.org/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://tidytemplate.tidyverse.org/reference/ruler.html</loc>
+  </url>
+  <url>
+    <loc>https://tidytemplate.tidyverse.org/reference/test.html</loc>
   </url>
 </urlset>
