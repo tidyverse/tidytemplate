@@ -4,10 +4,16 @@
     <loc>https://tidytemplate.tidyverse.org/index.html</loc>
   </url>
   <url>
+    <loc>https://tidytemplate.tidyverse.org/reference/ruler.html</loc>
+  </url>
+  <url>
     <loc>https://tidytemplate.tidyverse.org/reference/test.html</loc>
   </url>
   <url>
     <loc>https://tidytemplate.tidyverse.org/articles/bullets.html</loc>
+  </url>
+  <url>
+    <loc>https://tidytemplate.tidyverse.org/articles/code.html</loc>
   </url>
   <url>
     <loc>https://tidytemplate.tidyverse.org/articles/headings.html</loc>

@@ -3,8 +3,9 @@ pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
   bullets: bullets.html
+  code: code.html
   headings: headings.html
-last_built: 2021-10-29T21:35Z
+last_built: 2021-10-31T13:02Z
 urls:
   reference: https://tidytemplate.tidyverse.org/reference
   article: https://tidytemplate.tidyverse.org/articles

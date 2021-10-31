@@ -77,6 +77,9 @@
       <a href="articles/bullets.html">Bullets</a>
     </li>
     <li>
+      <a href="articles/code.html">Code</a>
+    </li>
+    <li>
       <a href="articles/headings.html">Headings</a>
     </li>
   </ul>
@@ -108,8 +111,7 @@
 <div id="overview" class="section level2">
 <h2 class="hasAnchor">
 <a href="#overview" class="anchor"></a>Overview</h2>
-<p>tidytemplate provides a custom <a href="https://pkgdown.r-lib.org">pkgdown</a> template for <a href="https://github.com/tidyverse">tidyverse packages</a>.</p>
-<p>Please don’t use it for your own package.</p>
+<p>tidytemplate provides a custom <a href="https://pkgdown.r-lib.org">pkgdown</a> template for tidyverse, r-lib, and tidymodels packages. Please don’t use it for your own package.</p>
 </div>
 <div id="using-tidytemplate" class="section level2">
 <h2 class="hasAnchor">
@@ -120,6 +122,20 @@
 <span id="cb1-3"><a href="#cb1-3"></a><span class="at">  </span><span class="fu">bootstrap</span><span class="kw">:</span><span class="at"> </span><span class="dv">5</span></span></code></pre></div>
 <p>Add the following to <code>DESCRIPTION</code>:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>Config<span class="op">/</span>needs<span class="op">/</span>website<span class="op">:</span><span class="st"> </span>tidyverse<span class="op">/</span>template</span></code></pre></div>
+<div id="variations" class="section level3">
+<h3 class="hasAnchor">
+<a href="#variations" class="anchor"></a>Variations</h3>
+<ul>
+<li>
+<p>tidymodels uses a different primary colour</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">template</span><span class="kw">:</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="at">  </span><span class="fu">package</span><span class="kw">:</span><span class="at"> tidytemplate</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="at">  </span><span class="fu">bootstrap</span><span class="kw">:</span><span class="at"> </span><span class="dv">5</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="at">  </span><span class="fu">bslib</span><span class="kw">:</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="at">    </span><span class="fu">primary</span><span class="kw">:</span><span class="at"> </span><span class="st">"#CA225E"</span></span></code></pre></div>
+</li>
+</ul>
+</div>
 </div>
 </div>
   </div>
