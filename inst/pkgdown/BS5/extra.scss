@@ -123,9 +123,12 @@ nav.navbar {
   }
 
   @include media-breakpoint-down(sm) {
-    margin-top: 1rem;
+    margin: 1rem 0 1rem 0;
     padding: 1rem;
-    background-color: $faint-border;
+    background-color: $faint-background;
+    width: 100vw;
+    border-top: 1px solid $faint-border;
+    border-bottom: 1px solid $faint-border;
   }
 }
 
@@ -151,14 +154,12 @@ nav.navbar {
 
 // Footer -------------------------------------------------------------
 footer {
-  margin-top: 5rem;
+  margin-top: auto; // needed for sticky footer
+  margin-bottom: 0;
   border-top: 1px solid $faint-border;
   background-color: $footer-background;
   padding: 1.25rem 0; // match visual height of navbar
 
-  @include media-breakpoint-down(sm) {
-    margin-top: 1rem;
-  }
   p {
     margin-bottom: 0;
   }
@@ -167,6 +168,30 @@ footer {
     display: flex;
   }
 }
+
+// Add margin to bottom of contents, since we can't add it to
+// footer
+.contents {
+  margin-bottom: 5rem;
+}
+@include media-breakpoint-down(sm) {
+  .contents {margin-bottom: 0}
+}
+
+// Tweak sticky footer since in tidytemplate the
+// footer is outside of the .container
+body {
+  min-height: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  & > .container {
+    min-height: 0;
+    flex-shrink: 0;
+  }
+}
+
 
 // Code ---------------------------------------------------------
 pre, code {
