@@ -35,7 +35,7 @@ Aliquam etiam erat velit scelerisque in dictum non.
 4.  Bullet 4
 5.  Bullet 5
 
-# Paragraph lists
+## Paragraph lists
 
 -   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Odio morbi quis commodo odio aenean sed adipiscing.
