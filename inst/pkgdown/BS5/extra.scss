@@ -167,6 +167,13 @@ footer {
   .container {
     display: flex;
   }
+  @include media-breakpoint-down(sm) {
+    .container {
+      flex-direction: column;
+      row-gap: 1rem;
+    }
+  }
+
 }
 
 // Add margin to bottom of contents, since we can't add it to
