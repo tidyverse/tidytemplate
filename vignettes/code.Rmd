@@ -50,12 +50,12 @@ render_rmarkdown <- function(pkg, input, output, ..., copy_images = TRUE, quiet 
   )
 
   path <- tryCatch(
-    pkgdown::r_safe(
+    rmarkdown::r_safe(
       function(...) rmarkdown::render(...),
       args = args,
       show = !quiet,
       env = c(
-        pkgdown::rcmd_safe_env(),
+        rmarkdown::rcmd_safe_env(),
         BSTINPUTS = bst_paths(input_path),
         TEXINPUTS = tex_paths(input_path),
         BIBINPUTS = bib_paths(input_path),
@@ -84,7 +84,7 @@ render_rmarkdown <- function(pkg, input, output, ..., copy_images = TRUE, quiet 
 
   # Copy over images needed by the document
   if (copy_images) {
-    ext <- pkgdown::find_external_resources(input_path)
+    ext <- rmarkdown::find_external_resources(input_path)
 
     # copy web + explicit files beneath vignettes/
     is_child <- path_has_parent(ext$path, ".")
