@@ -9,7 +9,7 @@ ruler <- function(width = getOption("width")) {
   y <- rep("-", length(x))
 
   y[x %% 5 == 0] <- "+"
-  y[x %% 10 == 0] <- crayon::bold(as.character((x[x %% 10 == 0] %/% 10) %% 10))
+  y[x %% 10 == 0] <- as.character((x[x %% 10 == 0] %/% 10) %% 10)
 
   cat(y, "\n", sep = "")
   cat(x %% 10, "\n", sep = "")
