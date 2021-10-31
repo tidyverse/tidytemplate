@@ -13,9 +13,8 @@ accessibility](https://img.shields.io/badge/check-accessibility-orange.svg)](htt
 ## Overview
 
 tidytemplate provides a custom [pkgdown](https://pkgdown.r-lib.org)
-template for [tidyverse packages](https://github.com/tidyverse).
-
-Please don’t use it for your own package.
+template for tidyverse, r-lib, and tidymodels packages. Please don’t use
+it for your own package.
 
 ## Using tidytemplate
 
@@ -30,3 +29,15 @@ template:
 Add the following to `DESCRIPTION`:
 
     Config/Needs/website: tidyverse/tidytemplate
+
+### Variations
+
+-   tidymodels uses a different primary colour
+
+    ``` yaml
+    template:
+      package: tidytemplate
+      bootstrap: 5
+      bslib:
+        primary: "#CA225E"
+    ```
