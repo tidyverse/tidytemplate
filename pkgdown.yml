@@ -1,11 +1,11 @@
 pandoc: 2.7.3
 pkgdown: 1.9000.9000.9000
-pkgdown_sha: 960d7a59f952e486956630136e5df072454b6968
+pkgdown_sha: 01a0df1eb07ca48c8e6e66a67b9dbb62cee8a333
 articles:
   bullets: bullets.html
   code: code.html
   headings: headings.html
-last_built: 2021-11-01T20:50Z
+last_built: 2021-11-01T21:15Z
 urls:
   reference: https://tidytemplate.tidyverse.org/reference
   article: https://tidytemplate.tidyverse.org/articles
