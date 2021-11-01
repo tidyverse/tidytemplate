@@ -102,6 +102,7 @@
 <h3 id="variations">Variations<a class="anchor" aria-label="anchor" href="#variations"></a>
 </h3>
 <ul>
+<li><p>r-lib uses the same as tidyverse (including <code>all.tidyverse.org</code>)</p></li>
 <li>
 <p>tidymodels uses a different primary colour and a different rollup domain:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">template</span><span class="kw">:</span></span>
@@ -109,8 +110,9 @@
 <span id="cb3-3"><a href="#cb3-3"></a><span class="at">  </span><span class="fu">bootstrap</span><span class="kw">:</span><span class="at"> </span><span class="dv">5</span></span>
 <span id="cb3-4"><a href="#cb3-4"></a><span class="at">  </span><span class="fu">bslib</span><span class="kw">:</span></span>
 <span id="cb3-5"><a href="#cb3-5"></a><span class="at">    </span><span class="fu">primary</span><span class="kw">:</span><span class="at"> </span><span class="st">"#CA225E"</span></span>
-<span id="cb3-6"><a href="#cb3-6"></a><span class="fu">  in_header</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb3-7"><a href="#cb3-7"></a>    &lt;script defer data-domain="{YOUR DOMAIN},all.tidymodels.org" src="https://plausible.io/js/plausible.js"&gt;&lt;/script&gt;  </span></code></pre></div>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="fu">includes</span><span class="kw">:</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="fu">    in_header</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a>      &lt;script defer data-domain="{YOUR DOMAIN},all.tidymodels.org" src="https://plausible.io/js/plausible.js"&gt;&lt;/script&gt;  </span></code></pre></div>
 </li>
 </ul>
 </div>
