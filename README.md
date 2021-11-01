@@ -18,12 +18,17 @@ it for your own package.
 
 ## Using tidytemplate
 
-Add the following to `_pkgdown.yaml`:
+Add the following to `_pkgdown.yaml`, modifying as `{YOUR DOMAIN}` as
+needed
 
 ``` yaml
 template:
   package: tidytemplate
   bootstrap: 5
+  
+  includes:
+    in_header: |
+      <script defer data-domain="{YOUR DOMAIN},all.tidyverse.org" src="https://plausible.io/js/plausible.js"></script>  
 ```
 
 Add the following to `DESCRIPTION`:
@@ -32,7 +37,8 @@ Add the following to `DESCRIPTION`:
 
 ### Variations
 
--   tidymodels uses a different primary colour
+-   tidymodels uses a different primary colour and a different rollup
+    domain:
 
     ``` yaml
     template:
@@ -40,4 +46,6 @@ Add the following to `DESCRIPTION`:
       bootstrap: 5
       bslib:
         primary: "#CA225E"
+      in_header: |
+        <script defer data-domain="{YOUR DOMAIN},all.tidymodels.org" src="https://plausible.io/js/plausible.js"></script>  
     ```
