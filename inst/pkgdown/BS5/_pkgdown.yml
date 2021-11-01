@@ -41,3 +41,13 @@ authors:
   Yihui Xie:
     href: http://yihui.org/
 
+footer:
+  structure:
+    left: [package, tidyverse]
+    right: [developed_by, built_with]
+  components:
+    tidyverse: >-
+      is a part of the <strong>tidyverse</strong>,
+      an ecosystem of packages designed with common APIs
+      and a shared philosophy. Learn more at
+      <a href="https://tidyverse.org">tidyverse.org</a>.
