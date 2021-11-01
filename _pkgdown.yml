@@ -2,6 +2,10 @@ template:
   package: tidytemplate
   bootstrap: 5
 
+  includes:
+    in_header: |
+      <script defer data-domain="tidytemplate.tidyverse.org,rollup.tidyverse.org" src="https://plausible.io/js/plausible.js"></script>
+
 url: https://tidytemplate.tidyverse.org
 
 authors:
