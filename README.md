@@ -37,6 +37,8 @@ Add the following to `DESCRIPTION`:
 
 ### Variations
 
+-   r-lib uses the same as tidyverse (including `all.tidyverse.org`)
+
 -   tidymodels uses a different primary colour and a different rollup
     domain:
 

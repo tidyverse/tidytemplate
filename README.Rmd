@@ -46,6 +46,8 @@ Config/Needs/website: tidyverse/tidytemplate
 
 ### Variations
 
+* r-lib uses the same as tidyverse (including `all.tidyverse.org`)
+
 * tidymodels uses a different primary colour and a different rollup domain:
 
     ```yaml
