@@ -11,6 +11,9 @@ template:
     grid-gutter-width: 3rem
     pkgdown-nav-height: 76px
 
+code:
+  width: 74
+
 navbar:
   type: light
   bg: none
