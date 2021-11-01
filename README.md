@@ -48,6 +48,7 @@ Add the following to `DESCRIPTION`:
       bootstrap: 5
       bslib:
         primary: "#CA225E"
-      in_header: |
-        <script defer data-domain="{YOUR DOMAIN},all.tidymodels.org" src="https://plausible.io/js/plausible.js"></script>  
+    includes:
+        in_header: |
+          <script defer data-domain="{YOUR DOMAIN},all.tidymodels.org" src="https://plausible.io/js/plausible.js"></script>  
     ```
