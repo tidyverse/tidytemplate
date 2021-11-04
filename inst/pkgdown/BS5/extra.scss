@@ -103,7 +103,8 @@ nav.navbar {
 
 #pkgdown-sidebar {
   border-left: 1px solid $faint-border;
-  margin-top: calc(2rem + #{$pkgdown-nav-height});
+  padding-top: calc(2rem + #{$pkgdown-nav-height});
+  margin-top: 0;
   line-height: 1.4;
 
   h2 {
