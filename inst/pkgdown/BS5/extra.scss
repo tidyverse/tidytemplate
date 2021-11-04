@@ -159,8 +159,7 @@ footer {
   margin-top: auto; // needed for sticky footer
   margin-bottom: 0;
   border-top: 1px solid $faint-border;
-  background-color: $footer-background;
-  padding: 1.25rem 0; // match visual height of navbar
+  padding: 2rem 0; // match visual height of navbar
 
   p {
     margin-bottom: 0;
@@ -169,6 +168,7 @@ footer {
   .container {
     display: flex;
   }
+
   @include media-breakpoint-down(sm) {
     .container {
       flex-direction: column;
