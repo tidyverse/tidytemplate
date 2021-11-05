@@ -18,6 +18,10 @@ knitr::opts_chunk$set(
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. Et egestas quis ipsum suspendisse ultrices gravida. Tellus at urna condimentum mattis pellentesque. Tincidunt tortor aliquam nulla facilisi. Pellentesque diam volutpat commodo sed egestas. Nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi. Est sit amet facilisis magna. Consectetur a erat nam at lectus urna. Eu tincidunt tortor aliquam nulla. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Interdum consectetur libero id faucibus nisl tincidunt. Morbi tristique senectus et netus et malesuada. Fermentum iaculis eu non diam phasellus vestibulum lorem sed.
 
+### A heading with `code`
+
+Quis commodo odio aenean sed adipiscing diam. Pellentesque habitant morbi tristique senectus et. Dapibus ultrices in iaculis nunc sed. Neque sodales ut etiam sit amet nisl purus in mollis. Morbi tempus iaculis urna id volutpat lacus laoreet non curabitur. Justo nec ultrices dui sapien. In ornare quam viverra orci. Aenean euismod elementum nisi quis. Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra.
+
 ### Heading 3a
 
 Enim praesent elementum facilisis leo vel fringilla est ullamcorper. Pulvinar mattis nunc sed blandit. Urna neque viverra justo nec ultrices dui sapien eget. Risus feugiat in ante metus. Purus ut faucibus pulvinar elementum integer enim. Tellus mauris a diam maecenas sed enim. Tincidunt dui ut ornare lectus sit amet est. Potenti nullam ac tortor vitae purus faucibus. Quis commodo odio aenean sed adipiscing diam. Pellentesque habitant morbi tristique senectus et. Dapibus ultrices in iaculis nunc sed. Neque sodales ut etiam sit amet nisl purus in mollis. Morbi tempus iaculis urna id volutpat lacus laoreet non curabitur. Justo nec ultrices dui sapien. In ornare quam viverra orci. Aenean euismod elementum nisi quis. Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra.

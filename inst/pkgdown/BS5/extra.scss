@@ -26,6 +26,10 @@ h4 {
   margin-top: 1.2rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: mix($body-color, $primary, 80%);
+}
+
 h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
 }
@@ -65,10 +69,6 @@ h2, h3, h4, h5, h6 {
   }
 }
 
-small.roles {
-  color: mix($body-color, $body-bg, 80%);
-}
-
 
 // Navbar -----------------------------------------------------------------
 
@@ -103,15 +103,18 @@ nav.navbar {
 
 #pkgdown-sidebar {
   border-left: 1px solid $faint-border;
-  padding-top: calc(2rem + #{$pkgdown-nav-height});
-  margin-top: 0;
+  margin-top: calc(2rem + #{$pkgdown-nav-height});
+  margin-bottom: 2rem;
   line-height: 1.4;
 
   h2 {
-    font-size: $font-size-base;
-    margin-bottom: 0.5rem;
-    margin-top: 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    margin-top: 2rem;
     font-weight: bold;
+    letter-spacing: 0.15rem;
+    color: $gray-800;
   }
   div:first-child h2 {
     margin-top: 0;
@@ -211,6 +214,14 @@ pre, code {
 pre code {
   background: transparent;
 }
+
+h1 code, h2 code, h3 code, h3 code, h5 code, h6 code {
+  background: transparent;
+  padding: 0;
+}
+
+// Match button radius
+code {border-radius: 3px}
 
 // Lists ---------------------------------------------------------
 ol, ul {
