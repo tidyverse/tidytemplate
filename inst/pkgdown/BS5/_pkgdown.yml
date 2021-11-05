@@ -21,6 +21,10 @@ navbar:
 authors:
   Alison Hill:
     href: https://www.apreshill.com
+  Barret Schloerke:
+    href: http://schloerke.com
+  Carson Sievert:
+    href: https://cpsievert.me
   Christophe Dervieux:
     href: https://github.com/cderv
   Davis Vaughan:
@@ -30,15 +34,21 @@ authors:
   Hadley Wickham:
     href: http://hadley.nz
   Hannah Frick:
-     href: https://frick.ws
+    href: https://frick.ws
   Jennifer Bryan:
     href: https://jennybryan.org
   Jim Hester:
     href: https://www.jimhester.com/
   Julia Silge:
     href: https://juliasilge.com/
+  Kirill Müller:
+    href: https://krlmlr.info
   Lionel Henry:
     href: https://github.com/lionel-
+  Max Kuhn:
+    href: http://github.com/topepo
+  Romain François:
+    href: https://github.com/romainfrancois
   Thomas Lin Pedersen:
      href: https://data-imaginist.com
   Yihui Xie:
