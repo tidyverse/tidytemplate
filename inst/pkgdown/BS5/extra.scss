@@ -4,6 +4,11 @@ $faint-border: #efefef !default;
 $navbar-background: $faint-background !default;
 $footer-background: $faint-background !default;
 
+@include media-breakpoint-up(xxl) {
+  body { font-size: 20px }
+}
+
+
 // Headings ----------------------------------------------------
 // Use smaller headings with more vertical space
 
