@@ -106,6 +106,12 @@ nav.navbar {
 
 // Sidebar ----------------------------------------------------------------
 
+@include media-breakpoint-up(sm) {
+  #toc {
+    top: calc(#{$pkgdown-nav-height} + 2rem);
+  }
+}
+
 #pkgdown-sidebar {
   border-left: 1px solid $faint-border;
   margin-top: calc(2rem + #{$pkgdown-nav-height});
@@ -217,6 +223,10 @@ pre, code {
 
 pre code {
   background: transparent;
+}
+
+pre {
+  font-size: 0.81em;
 }
 
 h1 code, h2 code, h3 code, h3 code, h5 code, h6 code {
