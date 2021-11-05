@@ -244,3 +244,13 @@ ul {
   }
 }
 
+// Search -------------------------------------------------------
+
+$mark-colour: mix($body-bg, $primary, 70%) !default;
+mark {
+  background: linear-gradient(-135deg,
+    change-color($mark-colour, $alpha: 0.2),
+    change-color($mark-colour, $alpha: 0.7) 95%,
+    change-color($mark-colour, $alpha: 0.1)
+  )
+}
