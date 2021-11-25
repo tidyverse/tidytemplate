@@ -13,13 +13,16 @@ accessibility](https://img.shields.io/badge/check-accessibility-orange.svg)](htt
 ## Overview
 
 tidytemplate provides a custom [pkgdown](https://pkgdown.r-lib.org)
-template for tidyverse, r-lib, and tidymodels packages. Please don’t use
-it for your own package.
+template for tidyverse, r-lib, tidymodels, and rmarkdown packages.
+Please don’t use it for your own package.
 
-## Using tidytemplate
+## Templates
 
-Add the following to `_pkgdown.yaml`, modifying as `{YOUR DOMAIN}` as
-needed
+For all sites, ensure that `DESCRIPTION` contains:
+
+    Config/Needs/website: tidyverse/tidytemplate
+
+### tidyverse and r-lib
 
 ``` yaml
 template:
@@ -31,24 +34,51 @@ template:
       <script defer data-domain="{YOUR DOMAIN},all.tidyverse.org" src="https://plausible.io/js/plausible.js"></script>  
 ```
 
-Add the following to `DESCRIPTION`:
+Ping Hadley on slack to get your site added to plausible.
 
-    Config/Needs/website: tidyverse/tidytemplate
+### tidymodels
 
-### Variations
+``` yaml
+template:
+  package: tidytemplate
+  bootstrap: 5
+  bslib:
+    primary: "#CA225E"
 
--   r-lib uses the same as tidyverse (including `all.tidyverse.org`)
+  includes:
+      in_header: |
+        <script defer data-domain="{YOUR DOMAIN},all.tidymodels.org" src="https://plausible.io/js/plausible.js"></script>  
+```
 
--   tidymodels uses a different primary colour and a different rollup
-    domain:
+Ping Hadley on slack to get your site added to plausible.
 
-    ``` yaml
-    template:
-      package: tidytemplate
-      bootstrap: 5
-      bslib:
-        primary: "#CA225E"
-    includes:
-        in_header: |
-          <script defer data-domain="{YOUR DOMAIN},all.tidymodels.org" src="https://plausible.io/js/plausible.js"></script>  
-    ```
+### rmarkdown / quillt
+
+``` yaml
+template:
+  package: tidytemplate
+  bootstrap: 5
+  
+  bslib:
+    primary: "#096B72"
+    navbar-background: "#e6f3fc"
+  trailing_slash_redirect: true
+```
+
+### Updating
+
+If you’re updating from a previous pkgdown config, use the following
+checklist to make sure everything is up to date:
+
+``` md
+* [ ] `usethis::use_pkgdown_github_pages()`
+* [ ] Ensure Author includes RStudio as copyright holder and funder
+* [ ] Update `DESCRIPTION` to include `Config/Needs/website: tidyverse/tidytemplate`
+* [ ] Update `_pkgdown.yml` with appropriate template above.
+* [ ] Ping Hadley to add plausible.io record
+* [ ] Remove `strip_header: true`
+* [ ] Remove algolia search, if used
+* [ ] Eliminate superseded navbar customisation (`home: ~`, article re-ordering)
+* [ ] Update `news` structure if needed
+* [ ] Remove any author info for tidyverse folks (since now included in template)
+```
