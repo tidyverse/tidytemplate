@@ -17,7 +17,7 @@ h2 {
   margin-top: 2.5rem;
 }
 // Reduce margin of first h2 on page
-.contents .page-header + .section h2 {
+main .page-header + .section h2 {
   margin-top: 1rem;
 }
 
@@ -112,7 +112,7 @@ nav.navbar {
   }
 }
 
-#pkgdown-sidebar {
+aside {
   border-left: 1px solid $faint-border;
   margin-top: calc(2rem + #{$pkgdown-nav-height});
   margin-bottom: 2rem;
@@ -193,11 +193,11 @@ footer {
 
 // Add margin to bottom of contents, since we can't add it to
 // footer
-.contents {
+main {
   margin-bottom: 5rem;
 }
 @include media-breakpoint-down(sm) {
-  .contents {margin-bottom: 0}
+  main {margin-bottom: 0}
 }
 
 // Tweak sticky footer since in tidytemplate the
@@ -247,7 +247,7 @@ ul {
 
 // Give top-level lists some margin between bullets. This only affects
 // "compact" lists because of margin-collapsing
-.contents {
+main {
   li {
     margin-bottom: 0.25rem;
     li { margin-bottom: 0; }
