@@ -22,6 +22,12 @@ authors:
   RStudio:
     href: https://www.rstudio.com
     html: <img src='https://www.tidyverse.org/rstudio-logo.svg' alt='RStudio' width='72' />
+  Posit, PBC:
+    href: https://www.posit.io
+    html: <img src='https://www.tidyverse.org/posit-logo.svg' alt='Posit' width='72' />
+  Posit Software, PBC:
+    href: https://www.posit.io
+    html: <img src='https://www.tidyverse.org/posit-logo.svg' alt='Posit' width='72' />
 
   Alison Hill:
     href: https://www.apreshill.com
