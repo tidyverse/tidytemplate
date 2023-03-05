@@ -31,7 +31,10 @@ template:
   
   includes:
     in_header: |
-      <script defer data-domain="{YOUR DOMAIN},all.tidyverse.org" src="https://plausible.io/js/plausible.js"></script>  
+      <script defer data-domain="{YOUR DOMAIN},all.tidyverse.org" src="https://plausible.io/js/plausible.js"></script>
+      
+development:
+  mode: auto
 ```
 
 Ping Hadley on slack to get your site added to plausible.
@@ -65,6 +68,18 @@ template:
   trailing_slash_redirect: true
 ```
 
+If your site should be added to a subdomain such as `tidyverse.org`,
+`r-lib.org`, `tidymodels.org`, then follow these steps:
+
+``` md
+* [ ] Submit PR [here](https://github.com/rstudio/aws-main/tree/main/zones) \\
+      adding your site to the appropriate domain (eg., r-lib, tidyverse, tidymodels)
+* [ ] Add `url: https://{pkgname}.{domain}.org` to `_pkgdown.yml`
+* [ ] Edit the URL field in DESCRIPTION and re-document.
+* [ ] Set url in GitHub Settings > Pages > Custom Domain
+* [ ] Edit URL in the settings in the "About" section of the package's GitHub page
+```
+
 ### Updating
 
 If you’re updating from a previous pkgdown config, use the following
@@ -81,4 +96,5 @@ checklist to make sure everything is up to date:
 * [ ] Eliminate superseded navbar customisation (`home: ~`, article re-ordering)
 * [ ] Update `news` structure if needed
 * [ ] Remove any author info for tidyverse folks (since now included in template)
+* [ ] If you need to re-publish a released site; see [How to update a released site](https://pkgdown.r-lib.org/dev/articles/how-to-update-released-site.html)
 ```
