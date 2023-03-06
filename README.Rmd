@@ -77,8 +77,9 @@ template:
   trailing_slash_redirect: true
 ```
 
-If your site should be added to a subdomain such as 
-`tidyverse.org`, `r-lib.org`, `tidymodels.org`, then follow these steps:
+If you need to add a subdomain for your package at a Posit domain (e.g., 
+`{pkg}.tidyverse.org`, `{pkg}.r-lib.org`, `{pkg}.tidymodels.org`), 
+then follow these steps:
 
 ```md
 * [ ] Submit PR [here](https://github.com/rstudio/aws-main/tree/main/zones) \\
