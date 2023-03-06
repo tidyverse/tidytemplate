@@ -73,12 +73,16 @@ If you need to add a subdomain for your package at a Posit domain (e.g.,
 follow these steps:
 
 ``` md
-* [ ] Submit PR [here](https://github.com/rstudio/aws-main/tree/main/zones) \\
+* [ ] Submit a PR [here](https://github.com/rstudio/aws-main/tree/main/zones) \\
       adding your site to the appropriate domain (eg., r-lib, tidyverse, tidymodels)
-* [ ] Add `url: https://{pkgname}.{domain}.org` to `_pkgdown.yml`
-* [ ] Edit the URL field in DESCRIPTION and re-document.
 * [ ] Set url in GitHub Settings > Pages > Custom Domain
-* [ ] Edit URL in the settings in the "About" section of the package's GitHub page
+* [ ] Run `usethis::use_pkgdown_github_actions(). This will automatically:
+  * Add `url: https://{pkgname}.{domain}.org` to `_pkgdown.yml`. It will \\
+    overwrite much of your customized `_pkgdown.yml` but you can use the \\
+    git diff to restore the necessary bits.
+  * Add the URL in DESCRIPTION.
+  * Update the homepage in the "About" section of the package's GitHub page
+* [ ] `devtools::document()`
 ```
 
 ### Updating
