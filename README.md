@@ -32,6 +32,9 @@ template:
   includes:
     in_header: |
       <script defer data-domain="{YOUR DOMAIN},all.tidyverse.org" src="https://plausible.io/js/plausible.js"></script>  
+      
+development:
+  mode: auto
 ```
 
 Ping Hadley on slack to get your site added to plausible.
@@ -48,6 +51,9 @@ template:
   includes:
       in_header: |
         <script defer data-domain="{YOUR DOMAIN},all.tidymodels.org" src="https://plausible.io/js/plausible.js"></script>  
+
+development:
+  mode: auto
 ```
 
 Ping Hadley on slack to get your site added to plausible.
