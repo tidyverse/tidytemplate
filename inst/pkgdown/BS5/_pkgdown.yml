@@ -12,7 +12,7 @@ template:
     pkgdown-nav-height: 78px
 
 code:
-  width: 74
+  width: 71
 
 navbar:
   type: light
