@@ -1,3 +1,4 @@
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 # tidytemplate <img src="man/figures/logo.png" align="right" />
@@ -23,61 +24,69 @@ For all sites, ensure that `DESCRIPTION` contains:
 
 ### tidyverse and r-lib
 
-    template:
-      package: tidytemplate
-      bootstrap: 5
+``` yaml
+template:
+  package: tidytemplate
+  bootstrap: 5
+  
+  includes:
+    in_header: |
+      <script src="https://cdn.jsdelivr.net/gh/posit-dev/supported-by-posit/js/badge.min.js" data-max-height="43" data-light-bg="#666f76" data-light-fg="#f9f9f9"></script>
+      <script defer data-domain="{YOUR DOMAIN},all.tidyverse.org" src="https://plausible.io/js/plausible.js"></script>  
       
-      includes:
-        in_header: |
-          <script src="https://cdn.jsdelivr.net/gh/posit-dev/supported-by-posit/js/badge.min.js" data-max-height="43" data-light-bg="#666f76" data-light-fg="#f9f9f9"></script>
-          <script defer data-domain="{YOUR DOMAIN},all.tidyverse.org" src="https://plausible.io/js/plausible.js"></script>  
-          
-    development:
-      mode: auto
+development:
+  mode: auto
+```
 
 Ping Hadley on slack to get your site added to plausible.
 
 ### tidymodels
 
-    template:
-      package: tidytemplate
-      bootstrap: 5
-      bslib:
-        primary: "#CA225E"
+``` yaml
+template:
+  package: tidytemplate
+  bootstrap: 5
+  bslib:
+    primary: "#CA225E"
 
-      includes:
-          in_header: |
-            <script src="https://cdn.jsdelivr.net/gh/posit-dev/supported-by-posit/js/badge.min.js" data-max-height="43" data-light-bg="#666f76" data-light-fg="#f9f9f9"></script>
-            <script defer data-domain="{YOUR DOMAIN},all.tidymodels.org" src="https://plausible.io/js/plausible.js"></script>  
+  includes:
+      in_header: |
+        <script src="https://cdn.jsdelivr.net/gh/posit-dev/supported-by-posit/js/badge.min.js" data-max-height="43" data-light-bg="#666f76" data-light-fg="#f9f9f9"></script>
+        <script defer data-domain="{YOUR DOMAIN},all.tidymodels.org" src="https://plausible.io/js/plausible.js"></script>  
 
-    development:
-      mode: auto
+development:
+  mode: auto
+```
 
 Ping Hadley on slack to get your site added to plausible.
 
 ### rmarkdown / quillt
 
-    template:
-      package: tidytemplate
-      bootstrap: 5
-      
-      bslib:
-        primary: "#096B72"
-        navbar-background: "#e6f3fc"
-      trailing_slash_redirect: true
+``` yaml
+template:
+  package: tidytemplate
+  bootstrap: 5
+  
+  bslib:
+    primary: "#096B72"
+    navbar-background: "#e6f3fc"
+  trailing_slash_redirect: true
+```
 
 ### Updating
 
 If you’re updating from a previous pkgdown config, use the following
 checklist to make sure everything is up to date:
 
-    * [ ] `usethis::use_pkgdown_github_pages()`
-    * [ ] Ensure Author includes RStudio as copyright holder and funder
-    * [ ] Update `DESCRIPTION` to include `Config/Needs/website: tidyverse/tidytemplate`
-    * [ ] Update `_pkgdown.yml` with appropriate template above.
-    * [ ] Ping Hadley to add plausible.io record
-    * [ ] Remove `strip_header: true`
-    * [ ] Remove algolia search, if used
-    * [ ] Eliminate superseded navbar customisation (`home: ~`, article re-ordering)
-    * [ ] Update `news` structure if needed
-    * [ ] Remove any author info for tidyverse folks (since now included in template)
+``` md
+* [ ] `usethis::use_pkgdown_github_pages()`
+* [ ] Ensure Author includes RStudio as copyright holder and funder
+* [ ] Update `DESCRIPTION` to include `Config/Needs/website: tidyverse/tidytemplate`
+* [ ] Update `_pkgdown.yml` with appropriate template above.
+* [ ] Ping Hadley to add plausible.io record
+* [ ] Remove `strip_header: true`
+* [ ] Remove algolia search, if used
+* [ ] Eliminate superseded navbar customisation (`home: ~`, article re-ordering)
+* [ ] Update `news` structure if needed
+* [ ] Remove any author info for tidyverse folks (since now included in template)
+```
